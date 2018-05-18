@@ -1,6 +1,7 @@
 .header {
         /* The image used */
-        background-image: url("../img/hero2.png");            
+        /*background-image: url("../img/herovector.png");  
+        background-size: 100%;    */      
         height: 100vh;       
         /* Create the parallax scrolling effect */
         /*background-attachment: fixed;
@@ -12,18 +13,10 @@
 
 .fullpage {
     min-height: 100vh;
-    padding-left: 5vh;
-    padding-right:5vh;
-}
-
-
-#nav-menu-link-container {
-    background-color: rgba(250, 250, 250, 0.65);
-    padding: 0.3rem;
 }
 
 #menu-navbar {
-    margin-left:78vw;
+    margin-left:70vw;
 }
 
 
@@ -42,14 +35,26 @@
 
 #header-logo-big {    
     position: absolute;
-    background-image: url("../img/logo3.png");     
+    background-image: url("../img/chairs.png");     
     background-repeat: no-repeat;
-    background-size: 60%;    
+    background-size: 65%;    
     background-position-y: bottom;
-    background-position-x: 40vw;
-    width: 100vw;
-    height: 100vh;
+    background-position-x: 33vw;
+    width: 98vw;
+    height: 110vh;
 }  
+
+#header-mountains {
+    position: absolute;
+    top: 10vh;
+    background-image: url("../img/herovector2.png");     
+    background-repeat: no-repeat;
+    background-size: 100%;    
+    background-position-y: bottom;
+    background-position-x: center;
+    width: 100%;
+    height: 100vh;
+}
 
 #header-logo-big2 {    
     background-image: url("../img/logo.png");     
@@ -59,9 +64,19 @@
     background-position-x: center;
     position:absolute;
     top:0px;
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     /*visibility: hidden;*/
+}
+
+#header-bg-filler {
+    background-color: rgb(35,64,107);
+    position: absolute;
+    top:102vh;
+    padding-bottom:5rem;
+    padding-left:5rem;
+    padding-right:5rem;
+    padding-top:2rem;
 }
 
 #products-container {
@@ -77,3 +92,22 @@
 }
 
 /*https://codemyui.com/animated-material-design-navigation-concept/*/
+
+
+.sliding-background {
+    background: url("../img/sky2.jpg") repeat-x;
+    position:absolute;
+    top:0;
+    height: 80vh;
+    width: 5076px;
+    animation: slide 120s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1692px, 0, 0);
+    }
+  }
