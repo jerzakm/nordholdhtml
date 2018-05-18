@@ -255,20 +255,19 @@ var gradients = (function() {
 
   // using colors from IBM Design Colors this time
   var colors = [ // 14 colors - use 3-5 span
-    '#3c6df0', // ultramarine50
-    '#12a3b4', // aqua40
-    '#00a78f', // teal40
-    '#00aa5e', // green40
-    '#81b532', // lime30
-    '#e3bc13', // yellow20
-    '#ffb000', // gold20
-    '#fe8500', // orange30
-    '#fe6100', // peach40
-    '#e62325', // red50
-    '#dc267f', // magenta50
-    '#c22dd5', // purple50
-    '#9753e1', // violet50
-    '#5a3ec8'  // indigo60
+    '#e8edfd',
+    '#ffffff',
+    '#dceded',
+    '#c6c6c6',
+    '#d8d8d8',
+    '#9bc9f2',
+    '#9ccee5',
+    '#c0e6f7',
+    '#d2eaf4',
+    '#deeaef',
+    '#d7dde0',
+    '#32d2ff',
+    '#7dd8f2'
   ];
 
   function assignRandomColors(gradObj) {
