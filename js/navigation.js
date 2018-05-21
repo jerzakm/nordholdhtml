@@ -4,10 +4,12 @@ goToPage(url);
 }
 
 function goToPage(pageUrl){
-    //checks if the page we want to go to is not the same as the one we are on..
     var atr = $(".content").attr("data-include");    
     if(pageUrl!=atr) {        
-        $(".content").attr("data-include", pageUrl);        
-        loadComponentContent(pageUrl);
+        $(".content").attr("data-include", pageUrl);                
+        var target = $(".content");        
+        var file = 'components/'+pageUrl+'.html';
+        $(".content").load(file);
+        console.log(pageUrl+";"+file);
     }        
 }
