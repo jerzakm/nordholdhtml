@@ -1,4 +1,4 @@
-.header { 
+.background { 
         position: fixed;
         top:0;
         height: 100vh;       
@@ -28,41 +28,7 @@
     padding: 1rem;
 }
 
-#header-logo-big {    
-    position: absolute;
-    background-image: url("../img/chairs.png");     
-    background-repeat: no-repeat;
-    background-size: 65%;    
-    background-position-y: bottom;
-    background-position-x: 33vw;
-    width: 98vw;
-    height: 110vh;
-}  
 
-#header-mountains {
-    position: fixed;
-    top: 10vh;
-    background-image: url("../img/herovector2.png");     
-    background-repeat: no-repeat;
-    background-size: 100%;    
-    background-position-y: bottom;
-    background-position-x: center;
-    width: 100%;
-    height: 100vh;
-}
-
-#header-logo-big2 {    
-    background-image: url("../img/logo.png");     
-    background-repeat: no-repeat;
-    background-size: 45%;
-    background-position-y: 2rem;
-    background-position-x: center;
-    position:absolute;
-    top:0px;
-    width: 98vw;
-    height: 100vh;
-    /*visibility: hidden;*/
-}
 
 #header-bg-filler {
     background-color: rgb(35,64,107);
@@ -201,12 +167,14 @@
 
 
 .sliding-background {
-    background: url("../img/sky2.jpg") repeat-x;
+    background: url("../img/bg/sky.jpg") repeat-x;
+    background-size: contain;
     position:absolute;
     top:0;
-    height: 80vh;
-    width: 5076px;
+    height: 100vh;
+    width: 400vw;
     animation: slide 120s linear infinite;
+    z-index: -10;
   }
   
   @keyframes slide {
@@ -216,6 +184,15 @@
     100% {
       transform: translate3d(-1692px, 0, 0);
     }
+  }
+
+  .header-background {
+    position: absolute;
+    top:0;
+    background: url("../img/bg/mountain-background.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
   }
 
 
@@ -290,4 +267,52 @@
 .faa-burst.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-burst.faa-slow {
   animation: burst 3s infinite linear
+}
+
+
+/* HOME PAGE */
+#home-container {
+    width:100vw;
+    height:100vh;
+    display: -webkit-flex;
+    display: flex;
+    z-index: 1;
+}
+
+#home-nordhold-logo {
+    position: absolute;
+    background: url("../img/home/logo.png") no-repeat;
+    background-size: contain;
+    height: 70vh;
+    width: 47vw;
+    top:3vh;
+}
+
+#home-nordhold-logo-container {
+  width:100vw;
+  height:80vh;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+#home-chairs-container {
+    width:100vw;
+    height:100vh;    
+    position: fixed;
+    top:0;
+    left:0;    
+    z-index: -1;
+}
+
+#home-chairs {
+    width:55vw;
+    height:100vh;    
+    position: absolute;
+    bottom:-40vh;
+    right:3vw;
+    background: url("../img/home/chairs.png") no-repeat;
+    background-size: contain;
 }

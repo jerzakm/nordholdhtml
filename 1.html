@@ -20,55 +20,13 @@
   <body>
 
 <!--Navbar-->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark mr-sm-2 blue" id="menu-navbar">
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="basicExampleNav">
-        <!-- Links -->
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active mr-sm-2" >
-                <a class="nav-link" href="#">Nordhold
-                    <span class="sr-only">(current)</span>
-                </a>
-            </li>
-												<!-- Dropdown -->
-												<li class="nav-item dropdown">
-														<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produkty</a>
-														<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-																<a class="dropdown-item" href="#products">Ymir</a>
-																<a class="dropdown-item" href="#products">Magni</a>
-														</div>
-												</li>
-						
-						<li class="nav-item">
-                <a class="nav-link" href="#articles">Porady</a>
-						</li>
-
-						<li class="nav-item">
-                <a class="nav-link" href="#faq">FAQ</a>
-						</li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Kontakt</a>
-						</li>
-           
-        </ul>
-    </div>
-    <!-- Collapsible content -->
-</nav>
 <!--/.Navbar-->
 
 
 	<!--header hero img-->
-	<section class="header">
-	<div class="sliding-background"></div>
-	<div id="header-mountains"></div>		
-	</section>
+	<section data-include="header"></section>	
+	
 
 	<section class="fullpage">
 		<div class="card" id="product-name">
@@ -219,7 +177,7 @@
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>		
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
@@ -229,4 +187,5 @@
 		<script src="js/colorselect.js"></script>
 		<script src="js/productdetailhover.js"></script>
 		<script src="js/lightbox.js"></script>
+		<script src="js/components.js"></script>
 </html>
