@@ -1,25 +1,35 @@
 $(document).ready(function(){
     $("#product-photo-modal-navbutton-next").click(function(){
-        var current = $('#product-photo-modal-big').attr("src");        
-        var start = current.slice(0,-5);
-        var id = current.slice(-5,-4);
-        var nextNumber = parseInt(id)+(1);
-        if(nextNumber==10){
-            nextNumber=1;
-        }
-        var next = start+nextNumber+".jpg";
-        $('#product-photo-modal-big').attr("src", next);
+        var current = $("#testdata").data("photoid");
+        var next = parseInt(current)+1;
+        if(next==10){next=1;}
+        $("#testdata").data("photoid",next);
+        var directory ="img/";
+        var color = $("#product-model-name").data("color");
+        var model = $("#product-model-name").data("model");
+        var src = directory+model+"/"+next+color+".jpg";            
+        $('#product-photo-modal-big').attr("src", src);
     });
 
     $("#product-photo-modal-navbutton-previous").click(function(){
-        var current = $('#product-photo-modal-big').attr("src");        
-        var start = current.slice(0,-5);
-        var id = current.slice(-5,-4);
-        var nextNumber = parseInt(id)-(1);
-        if(nextNumber==0){
-            nextNumber=9;
-        }
-        var next = start+nextNumber+".jpg";
-        $('#product-photo-modal-big').attr("src", next);
+        var current = $("#testdata").data("photoid");
+        var next = parseInt(current)-1;
+        if(next==00){next=9;}
+        $("#testdata").data("photoid",next);
+        var directory ="img/";
+        var color = $("#product-model-name").data("color");
+        var model = $("#product-model-name").data("model");
+        var src = directory+model+"/"+next+color+".jpg";            
+        $('#product-photo-modal-big').attr("src", src);
+    });
+
+    $(".product-photo-mini").click(function(){         
+        var directory ="img/";
+        var picId = $(this).attr("id");    
+        var modalPicId = $("#testdata").data("photoid",picId);
+        var color = $("#product-model-name").data("color");
+        var model = $("#product-model-name").data("model");
+        var src = directory+model+"/"+picId+color+".jpg";        
+        $("#product-photo-modal-big").attr("src",src);
     });
 });

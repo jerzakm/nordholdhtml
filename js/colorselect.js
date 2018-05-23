@@ -7,8 +7,8 @@ $(document).ready(function(){
         $("#chair-display-img").attr("src","img/chair-red.png");
         $(".more-info-button").attr("id","button-red");
         $(".fa-circle-o").attr("id","element-red");
-        replaceMiniGallery("red");
-        setmodalColor("red");
+        $("#product-model-name").data("color","r");
+        replaceGalleryColor("r");
     } 
     
     //GREEN
@@ -16,8 +16,8 @@ $(document).ready(function(){
         $("#chair-display-img").attr("src","img/chair-green.png");
         $(".more-info-button").attr("id","button-green");
         $(".fa-circle-o").attr("id","element-green");
-        replaceMiniGallery("green");
-        setmodalColor("green");
+        $("#product-model-name").data("color","g");
+        replaceGalleryColor("g");
     } 
     
     //BLUE
@@ -25,8 +25,8 @@ $(document).ready(function(){
         $("#chair-display-img").attr("src","img/chair-blue.png");
         $(".more-info-button").attr("id","button-blue");
         $(".fa-circle-o").attr("id","element-blue");
-        replaceMiniGallery("blue");
-        setmodalColor("blue");
+        $("#product-model-name").data("color","b");
+        replaceGalleryColor("b");
     } 
     
     //WHITE
@@ -34,30 +34,19 @@ $(document).ready(function(){
         $("#chair-display-img").attr("src","img/chair-white.png");
         $(".more-info-button").attr("id","button-white");
         $(".fa-circle-o").attr("id","element-white");
-        replaceMiniGallery("white");
-        setmodalColor("white");
+        $("#product-model-name").data("color","w");
+        replaceGalleryColor("w");
     }
     });
   });
 
-function replaceMiniGallery(color){
+function replaceGalleryColor(color){
+    var directory = "img/";
+    var model = $("#product-model-name").data('model');
+    var fileExt = ".jpg";
     $('.product-photo-mini').each(function() {
-        var oldSrc = $(this).attr("src");
-        var start = oldSrc.substring(0,9);
-        var end = oldSrc.slice(-11);    
-        newSrc=start+color+end;            
-        $(this).attr("src",newSrc);
+        var picId = $(this).attr("id");
+        var newMiniSrc = directory+model+"/"+"m"+picId+color+fileExt;      
+        $(this).attr("src", newMiniSrc)
     });    
-}
-
-function setModalColor(color) {
-    $('.product-photo-mini').each(function() {
-        var oldSrc = $(this).attr("src");
-        var start = oldSrc.substring(0,9);
-        var end = oldSrc.slice(-4);
-        console.log(end);
-        newSrc=start+color+end;            
-        console.log(newSrc);
-        $(this).attr("src",newSrc);
-    });
 }

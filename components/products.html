@@ -3,7 +3,7 @@
     <!-- MODEL SELECTOR -->
     <div class="card product-desc-element" id="product-name">
         <div class="card-body" id="product-model-selector">
-                <h3 class="card-title" id="product-model-name">Nordhold Ymir </h3>                                										            
+                <h3 class="card-title" id="product-model-name" data-model="ymir" data-color="r">Nordhold Ymir </h3>                                										            
         </div>
 </div>
 
@@ -61,32 +61,32 @@
     <div class="card product-desc-element">
         <div class="card-body">
             <div class="photo-gallery">               
-                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
-                            <img src="img/ymir/red/mini/1.JPG" class="img-fluid product-photo-mini" id="m1">
+                        <a href="#" data-toggle="modal" data-target="#galleryModal">
+                            <img src="img/ymir/m1r.JPG" class="img-fluid product-photo-mini" id="1">
                         </a>
-                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
-                            <img src="img/ymir/red/mini/2.JPG" class="img-fluid card product-photo-mini" id="m2">
+                        <a href="#" data-toggle="modal" data-target="#galleryModal">
+                            <img src="img/ymir/m2r.JPG" class="img-fluid card product-photo-mini" id="2">
                         </a>
-                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
-                            <img src="img/ymir/red/mini/3.JPG" class="img-fluid card product-photo-mini" id="m3">
+                        <a href="#" data-toggle="modal" data-target="#galleryModal">
+                            <img src="img/ymir/m3r.JPG" class="img-fluid card product-photo-mini" id="3">
                         </a>
-                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
-                            <img src="img/ymir/red/mini/4.JPG" class="img-fluid card product-photo-mini" id="m4">
+                        <a href="#" data-toggle="modal" data-target="#galleryModal">
+                            <img src="img/ymir/m4r.JPG" class="img-fluid card product-photo-mini" id="4">
                         </a>
-                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
-                            <img src="img/ymir/red/mini/5.JPG" class="img-fluid card product-photo-mini" id="m5">
+                        <a href="#" data-toggle="modal" data-target="#galleryModal">
+                            <img src="img/ymir/m5r.JPG" class="img-fluid card product-photo-mini" id="5">
                         </a>
-                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
-                            <img src="img/ymir/red/mini/6.JPG" class="img-fluid card product-photo-mini" id="m6">
+                        <a href="#" data-toggle="modal" data-target="#galleryModal">
+                            <img src="img/ymir/m6r.JPG" class="img-fluid card product-photo-mini" id="6">
                         </a>
-                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
-                            <img src="img/ymir/red/mini/7.JPG" class="img-fluid card product-photo-mini" id="m7">
+                        <a href="#" data-toggle="modal" data-target="#galleryModal">
+                            <img src="img/ymir/m7r.JPG" class="img-fluid card product-photo-mini" id="7">
                         </a>
-                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
-                            <img src="img/ymir/red/mini/8.JPG" class="img-fluid card product-photo-mini" id="m8">
+                        <a href="#" data-toggle="modal" data-target="#galleryModal">
+                            <img src="img/ymir/m8r.JPG" class="img-fluid card product-photo-mini" id="8">
                         </a>
-                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
-                            <img src="img/ymir/red/mini/9.JPG" class="img-fluid card product-photo-mini" id="m9">
+                        <a href="#" data-toggle="modal" data-target="#galleryModal">
+                            <img src="img/ymir/m9r.JPG" class="img-fluid card product-photo-mini" id="9">
                         </a>            
                 </div>
             </div>
@@ -96,17 +96,17 @@
 </div>
 <!-- DIV ENDING DESCRIPTION CONTENT PANEL -->
 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalTitle" aria-hidden="true">
 <div class="modal-dialog modal-fluid" role="document" id="product-gallery-modal">
 <div class="modal-content modal-lg" >
   <div class="modal-header">
-    <h5 class="modal-title" id="exampleModalCenterTitle">Nordhold Ymir - Galeria Zdjęć</h5>
+    <h5 class="modal-title" id="galleryModalTitle">Nordhold Ymir - Galeria Zdjęć</h5>
     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  <div class="modal-body">
-    <img src="img/ymir/red/1.JPG" id="product-photo-modal-big">
+  <div class="modal-body" id="testdata" data-photoid="1">
+    <img src="img/ymir/1r.JPG" id="product-photo-modal-big">
     <a href="#" class="btn btn-primary product-photo-modal-navbutton" id="product-photo-modal-navbutton-next">
             <svg xmlns="http://www.w3.org/2000/svg" class="svg-arrow" id="svg-arrow-left" viewBox="0 0 512 512"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/></svg>
     </a>
