@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Ruda&subset=latin-ext');
 
 body {
     font: size 16;        
@@ -90,16 +91,12 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9 {
     height: 100vh;
     width: 100vw;
   }
-
-
   
-  
-
 /* WAVE */
 @keyframes burst {
-  0% {opacity:.6}
-  50% {transform:scale(1.8);opacity:0}
-  100%{opacity:0}
+  0% {opacity:.9}
+  50% {transform:scale(2);opacity:0}
+  100%{opacity:0.5}
 }
 .faa-burst.animated,
 .faa-burst.animated-hover:hover,
@@ -130,9 +127,22 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9 {
 #home-nordhold-logo {
     position: absolute;
     background: url("../img/home/logo.png") no-repeat;
+
     background-size: contain;
     height: 70vh;
     width: 47vw;
+    top:3vh;
+}
+
+.big-nh-logo-bg{
+    position: absolute;
+    background: url("../img/home/logo.png") no-repeat;
+    background-size: contain;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 100vh;
+    width: 80vw;
+    overflow: hidden;
     top:3vh;
 }
 
@@ -313,6 +323,8 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9 {
     font-size: 0px;
     line-height: 1.33;
     border-radius: 35px;
+    border-width:2px !important;
+    border-color: #1d1616 !important;
     background-color: rgba(255, 255, 255, 0.75);
     position: absolute;    
   }
@@ -335,9 +347,9 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9 {
     right: 17.5vw;
     bottom: 33vh;      
   }
-  #btn-back {
-    right: 24.5vw;
-    bottom: 60.5vh;      
+  #btn-wheels {
+    right: 28.5vw;
+    bottom: 1vh;      
   }
   #btn-seat {
     right: 33.5vw;
@@ -361,14 +373,40 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9 {
     
 }
 
+/* CONTACT */
+
+.contact-container {        
+    margin: 5vw;
+    margin-top: 5vh;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+#contact-section {
+    overflow: hidden;
+}
+
+#contact-form-text {
+    font-size: 1.3em;
+}
 
 
+#contact-form {
+    min-width:50vw;
+    margin-top: 2rem;
+    max-width:60vw;
+}
 
+#contact-shop-card {
+    margin-top: 2rem;
+    max-width:60vw;
+}
 
-
-
-
-
+#contact-shop-map {
+    margin-top: 2rem;
+}
 
 .product-photo-mini-modal {
     width: 7rem;
@@ -401,3 +439,26 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9 {
 
 
 
+/* STORE PAGE */
+#store-header-card {
+    margin-top: 5rem;
+    max-width:60vw;
+}
+
+#store-header{
+    font-size:2em;
+    color: rgb(33, 43, 48);
+}
+
+#store-header-text{
+    font-size:1.3em;
+    color: #37474F;
+}
+
+#store-panel-text{
+    margin-top:1rem;
+}
+
+#store-panel-map{
+    margin-top:1rem;
+}
