@@ -34,9 +34,9 @@ $(document).ready(function(){
 
         else if($(this).attr("id")=="btn-armrest") {
             var src = "img/"+model+"/detal/"+"6"+color+".jpg";
-            $("#detail-card-title").text("Regulowane podłokietniki");
+            $("#detail-card-title").text("Wygodne podłokietniki");
             $("#detail-card-text").text(
-                "Nikt nie lubi godzinami opierać łokci na twardym jak skała plastiku, dlatego też podłokietniki wykonane są z miękkiego, odpornego na odkształcenia materiału zapewniającego wygodę nawet przy długim użytkowaniu. Ponadto, istnieje możliwość regulacji wysokości podłokietników o 6cm oraz ich obrotu w lewo oraz prawo o 30°."
+                "Nikt nie lubi godzinami opierać łokci na twardym jak skała plastiku, dlatego też podłokietniki wykonane są z miękkiego, odpornego na odkształcenia materiału zapewniającego wygodę nawet przy długim użytkowaniu."
             );
         }
 

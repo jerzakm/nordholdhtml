@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9 {
 }
 
 #menu-navbar {
-    margin-left:78vw;
+    margin-left:81vw;
 }
 
 
@@ -30,7 +30,7 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9 {
 #header-desc {
     width: 35vw;
     position: absolute;
-    bottom:10vw;
+    bottom:10vh;
     left:5vw;
 
 }
@@ -39,8 +39,15 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9 {
     background-color: rgba(255, 255, 255, 0.65);
     padding: 1rem;
     font-size: 1.2em;
+    box-shadow: 0 9px 30px 3px rgba(0,0,0,.55);
 }
 
+#header-desc-text-big {    
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 1rem;
+    font-size: 1.7em;
+    box-shadow: 0 9px 30px 3px rgba(0,0,0,.55);
+}
 
 
 #header-bg-filler {
@@ -462,4 +469,11 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9 {
 
 #store-panel-map{
     margin-top:1rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #menu-navbar {
+        margin-left:300px;
+    }
 }
